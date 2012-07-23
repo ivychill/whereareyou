@@ -1,0 +1,16 @@
+development:
+  host: localhost
+  database: trackeeserver_development
+
+test:
+  host: localhost
+  database: trackeeserver_test
+
+# set these environment variables on your prod server
+#production:
+#  uri: <%= ENV['MONGOHQ_URL'] %>
+
+production:
+  host: localhost
+  database: trackeeserver_production
+

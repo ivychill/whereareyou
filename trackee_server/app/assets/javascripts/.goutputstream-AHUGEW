@@ -1,0 +1,11 @@
+/* myLoc.js */
+
+var watchId = null;
+var map = null;
+var prevCoords = null;
+
+$ = jQuery;
+
+function getMyLocation() {
+	map = new BMap.Map("map");
+	map.centerAndZoom("

@@ -1,0 +1,84 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html { 
+    height: 100%; 
+}
+
+body { 
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+	#map_canvas {
+		height: 100%;
+		border: 1px solid black;
+	}
+
+/* marker navigation bar */
+#marker-nav {
+    /* set general color and style */
+    background: rgba(33, 69, 123, 0.8);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.85);
+    text-align: center;
+
+    /* initialize positioning and layout */
+    position: absolute;
+    top: 1px;
+    z-index: 90;
+    width: 90%;
+    margin: 0 2%;
+    padding: 18px 3% 10px;
+
+    /* add the 'mandatory' border radius */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 12px;
+}
+
+/* marker navigation elements styling */
+#marker-nav img.left {
+    float: left;
+    -webkit-transform: rotate(180deg);
+}
+
+#marker-nav img.right {
+    float: right;
+}
+
+#marker-nav img.disabled {
+    opacity: 0.25;
+}
+
+#marker-nav span.has-detail {
+    text-decoration: underline;
+}
+
+/* child views */
+
+div.child-screen {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top: 0px;
+    position: absolute;
+    z-index: 91;
+}
+
+div.child-screen .content {
+    margin: 50px 10px 0;
+}
+
+div.child-screen button.close {
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: block;
+}
