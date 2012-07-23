@@ -45,7 +45,7 @@ void TrackEventHelper::parseFromWire(std::string& msg, zmq::socket_t& socket)
 			//std::map<std::string, com::luyun::whereareyou::shared::TrackEvent*>::iterator it;
 			//it = mapTrackEventOnAir.find(genKey(pTrackEvent))->second;
 			//com::luyun::whereareyou::shared::TrackEvent* pTrackEventOnWire = it->second;
-			if (pTrackEventOnWire->has_id() == false) 
+			if (pTrackEventOnWire->has_id() == false || pTrackEventOnWire->has_trackee_x() ||pTrackEventOnWire->has_trackee_y()) 
 			{
 				std::cerr << "SEND_LOC_REQ must carry event id." << std::endl;
 				delete pTrackEventOnWire;
@@ -194,7 +194,7 @@ int main() {
     TrackEventHelper *newTrackerEventHelper = new TrackEventHelper();
     zmq::context_t context (1);
     zmq::socket_t socket (context, ZMQ_ROUTER);
-    socket.bind ("tcp://*:8002");
+    socket.bind ("tcp://*:8007");
     
     //loop for waiting connection from tracker_client or trackee_server
     while (true) {

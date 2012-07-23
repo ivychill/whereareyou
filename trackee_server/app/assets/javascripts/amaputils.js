@@ -36,15 +36,17 @@ function watchLocation() {
 function updateLoc(position) {
 	addMarker(new AMap.LngLat(position.coords.longitude, position.coords.latitude));
 	//Ajax post to server
+	var pathReg = new RegExp("\/(t|event)\/");
+	var pathName = window.location.pathname.replace(pathReg, "");
 	var track_event = {
-		id:19751974,
+		id:pathName,
 		trackee_x:position.coords.longitude,
 		trackee_y:position.coords.latitude
 	};
 	
 	$.ajax({
 		type: 'PUT',
-		url: "/events/19751974",
+		url: window.location.pathname,
 		data: track_event,
 		success: function() {
 			return;

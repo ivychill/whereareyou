@@ -25,7 +25,7 @@ class EventsController < ApplicationController
     #te.tracker = @event.tracker
     #te.trackee = @event.trackee
     te.id = Integer(eid)
-    te.id = 19752012
+    #te.id = 19752012
     te.trackee_x = params[:trackee_x]
     te.trackee_y = params[:trackee_y]
     te.type = Com::Luyun::Whereareyou::Shared::TrackEvent::EventType::SEND_LOC_REQ
@@ -38,7 +38,7 @@ class EventsController < ApplicationController
     outbound = zcontext.socket ZMQ::DEALER 
     puts "ggggg"
     outbound.setsockopt ZMQ::IDENTITY, "TRACKEE_WEB_SVR"
-    outbound.connect("tcp://localhost:8002")
+    outbound.connect("tcp://42.121.18.140:8007")
     puts "ffff"
 
     outbound.send_string serialized_te

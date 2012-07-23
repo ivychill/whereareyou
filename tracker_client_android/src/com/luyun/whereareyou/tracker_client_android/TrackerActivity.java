@@ -1,6 +1,10 @@
 package com.luyun.whereareyou.tracker_client_android;
 
+import java.util.List;
+
+import com.amap.mapapi.core.AMapException;
 import com.amap.mapapi.core.GeoPoint;
+import com.amap.mapapi.geocoder.Geocoder;
 import com.amap.mapapi.map.MapActivity;
 import com.amap.mapapi.map.MapController;
 import com.amap.mapapi.map.MapView;
@@ -27,6 +31,7 @@ import android.graphics.Canvas;
 import android.graphics.Point;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.location.Address;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -44,6 +49,7 @@ public class TrackerActivity extends MapActivity {
 	private MapController mMapController;
 	private GeoPoint point;
 	private MyLocationOverlayProxy mLocationOverlay;
+	private Geocoder mCoder;// 逆地理编码
 	  
 	//detect shaking gesture event
 	private SensorManager mSensorManager;
@@ -82,11 +88,7 @@ public class TrackerActivity extends MapActivity {
 				(int) (116.397428 * 1E6));  //用给定的经纬度构造一个GeoPoint，单位是微度 (度 * 1E6)
 		mMapController.setCenter(point);  //设置地图中心点
 		mMapController.setZoom(12);    //设置地图zoom级别
-
-    	mTrackEventOnAir = TrackEvent.newBuilder() 
-				.setTracker("13923754735")
-				.setType(EventType.START_TRACKING_REQ)
-				.build();
+		mCoder = new Geocoder(this);
 
         mOnMsgRecv = new Handler() {
         	public void handleMessage(Message msg) {
@@ -96,17 +98,31 @@ public class TrackerActivity extends MapActivity {
 					trackEventOnWire  = TrackEvent.parseFrom(msg.getData().getByteArray("event"));
 					switch (trackEventOnWire.getType()) {
 					case START_TRACKING_REP:
-			            String strHyperLink = "蔡庆丰想知道你在哪，"+"同意请点击"
-			            					+ "http://172.16.0.107:3000/t/"
+			            String strHyperLink = ""
+			            					+"想知道你在哪，同意请点击"
+			            					+"http://"+Constants.TRACKER_SERVER_HOST+":"
+			            					+Constants.TRACKEE_SERVER_PORT
+			            					+"/t/"
 			            					+trackEventOnWire.getId();
 			            System.out.println(strHyperLink);
-			            //sendMessage("18666201708", strHyperLink);
+			            postMsg(mTrackEventOnAir.getTrackee(), strHyperLink);
 			            break;
 					case FWD_LOC_REQ:
 			            System.out.println(trackEventOnWire.getTrackeeX());
 			            System.out.println(trackEventOnWire.getTrackeeY());
 			            //convert it to mapabc's address firstly
-			            addMarker(trackEventOnWire.getTrackeeX(), trackEventOnWire.getTrackeeY());
+			            try  {
+							List<Address> listAddress = mCoder.getFromRawGpsLocation(Double.parseDouble(trackEventOnWire.getTrackeeX()),
+									Double.parseDouble(trackEventOnWire.getTrackeeY()), 3);
+							if (listAddress != null) {
+								Address address = listAddress.get(0);
+								addMarker(address.getLongitude(), address.getLatitude());
+							}
+			            } catch (AMapException e) {
+							// TODO Auto-generated catch block
+							handler.sendMessage(Message
+									.obtain(handler, Constants.ERROR));
+						}
 			            break;
 			        default:
 			        	break;
@@ -136,27 +152,20 @@ public class TrackerActivity extends MapActivity {
             Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
             startActivityForResult(intent, PICK_CONTACT);
         	//queryWhereAreYou();
-            mTrackEventOnAir.toBuilder().clear();
-            mTrackEventOnAir = TrackEvent.newBuilder()
-            			.setTrackee("18666201708")
-            			.setTracker("13923754735")
-            			.setType(EventType.START_TRACKING_REQ)
-            			.build();
-            byte[] data = mTrackEventOnAir.toByteArray();
-            mIOThread.sendMsgToTrackerSvr(data);
-    		
           }
 
-		  private void sendMessage(String recipient, String msg) {
-			// TODO Auto-generated method stub
-			PendingIntent pi =PendingIntent.getActivity(getApplicationContext(), 0, new Intent(getApplicationContext(), TrackerActivity.class), 0);
-			SmsManager sms=SmsManager.getDefault();
-			sms.sendTextMessage(recipient, null, msg, pi, null);
-            Toast.makeText(getApplicationContext(), "Successfully sent message!", Toast.LENGTH_SHORT).show();
-		  }
         });
 		
 	}
+	
+	private void postMsg(String recipient, String msg) {
+			// TODO Auto-generated method stub
+		PendingIntent pi =PendingIntent.getActivity(getApplicationContext(), 0, new Intent(getApplicationContext(), TrackerActivity.class), 0);
+		SmsManager sms=SmsManager.getDefault();
+		sms.sendTextMessage(recipient, null, msg, pi, null);
+        Toast.makeText(getApplicationContext(), "Successfully sent message!", Toast.LENGTH_SHORT).show();
+	}
+		  
     @Override
     protected void onResume() {
 	  this.mLocationOverlay.enableMyLocation();
@@ -187,6 +196,12 @@ public class TrackerActivity extends MapActivity {
     	mMapView.getOverlays().add(new MyMarker());        
     }
     
+    private void addMarker(Double lngX, Double latY) {
+		point = new GeoPoint((int) (latY * 1E6),
+					(int) (lngX * 1E6));  //用给定的经纬度构造一个GeoPoint，单位是微度 (度 * 1E6)
+    	mMapView.getOverlays().add(new MyMarker());        
+    }
+    
     @Override
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
       super.onActivityResult(reqCode, resultCode, data);
@@ -207,8 +222,16 @@ public class TrackerActivity extends MapActivity {
              	while (pCur.moveToNext()) {
              		    // Do something with phones
                     String phoneNo = pCur.getString(pCur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DATA));
-             		//Toast.makeText(getApplicationContext(), phoneNo, Toast.LENGTH_SHORT).show();
-	              Toast.makeText(getApplicationContext(), phoneNo, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), phoneNo, Toast.LENGTH_SHORT).show();
+                    //to be improved, only sent to last number of that contact!
+                    //mTrackEventOnAir.toBuilder().clear();
+                    mTrackEventOnAir = TrackEvent.newBuilder()
+                    			.setTrackee(phoneNo)
+                    			.setTracker(mDeviceID)
+                    			.setType(EventType.START_TRACKING_REQ)
+                    			.build();
+                    byte[] dataToSvr = mTrackEventOnAir.toByteArray();
+                    mIOThread.sendMsgToTrackerSvr(dataToSvr);
              	} 
              	pCur.close();
 		      }
@@ -254,10 +277,13 @@ public class TrackerActivity extends MapActivity {
 		public void run() {
 			context = ZMQ.context(1);
 	        zsocket = context.socket(ZMQ.DEALER);
-	        zsocket.setIdentity(mTrackEventOnAir.getTracker().getBytes());
+	        zsocket.setIdentity(mDeviceID.getBytes());
 	        
 	        System.out.println("Connecting to tracker server..."); 
-	        zsocket.connect ("tcp://172.16.0.106:8002");
+	        zsocket.connect ("tcp://"
+	        				+Constants.TRACKER_SERVER_HOST
+	        				+":"
+	        				+Constants.TRACKER_SERVER_PORT);
             
 	        while (true) {
 		        byte[] data = zsocket.recv(0); 

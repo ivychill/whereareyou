@@ -18,4 +18,8 @@ public class Constants {
 	
 	public static final int BUSLINE_RESULT=6000;
 	public static final int BUSLINE_DETAIL_RESULT=6001;	
+
+	public static final int TRACKER_SERVER_PORT=8007; 
+	public static final int TRACKEE_SERVER_PORT=8008;	
+	public static final String TRACKER_SERVER_HOST="42.121.18.140";	
 }
