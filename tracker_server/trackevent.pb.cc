@@ -35,7 +35,7 @@ void protobuf_AssignDesc_proto_2ftrackevent_2eproto() {
       "proto/trackevent.proto");
   GOOGLE_CHECK(file != NULL);
   TrackEvent_descriptor_ = file->message_type(0);
-  static const int TrackEvent_offsets_[8] = {
+  static const int TrackEvent_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, tracker_),
@@ -44,6 +44,7 @@ void protobuf_AssignDesc_proto_2ftrackevent_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, trackee_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, trackee_x_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, trackee_y_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrackEvent, trackee_desc_),
   };
   TrackEvent_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -88,18 +89,19 @@ void protobuf_AddDesc_proto_2ftrackevent_2eproto() {
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\026proto/trackevent.proto\022\034com.luyun.wher"
-    "eareyou.shared\"\220\003\n\nTrackEvent\022T\n\004type\030\001 "
+    "eareyou.shared\"\246\003\n\nTrackEvent\022T\n\004type\030\001 "
     "\002(\01622.com.luyun.whereareyou.shared.Track"
     "Event.EventType:\022START_TRACKING_REQ\022\n\n\002i"
     "d\030\002 \001(\005\022\017\n\007tracker\030\003 \001(\t\022\021\n\ttracker_x\030\004 "
     "\001(\t\022\021\n\ttracker_y\030\005 \001(\t\022\017\n\007trackee\030\006 \001(\t\022"
-    "\021\n\ttrackee_x\030\007 \001(\t\022\021\n\ttrackee_y\030\010 \001(\t\"\261\001"
-    "\n\tEventType\022\026\n\022START_TRACKING_REQ\020x\022\027\n\022S"
-    "TART_TRACKING_REP\020\322\001\022\021\n\014SEND_LOC_REQ\020\300\002\022"
-    "\021\n\014SEND_LOC_REP\020\346\001\022\024\n\017QUERY_BY_ID_REQ\020\301\002"
-    "\022\024\n\017QUERY_BY_ID_REP\020\347\001\022\020\n\013FWD_LOC_REQ\020\323\001"
-    "\022\017\n\013FWD_LOC_REP\020yB0\n\034com.luyun.wherearey"
-    "ou.sharedB\020TrackEventProtos", 507);
+    "\021\n\ttrackee_x\030\007 \001(\t\022\021\n\ttrackee_y\030\010 \001(\t\022\024\n"
+    "\014trackee_desc\030\t \001(\t\"\261\001\n\tEventType\022\026\n\022STA"
+    "RT_TRACKING_REQ\020x\022\027\n\022START_TRACKING_REP\020"
+    "\322\001\022\021\n\014SEND_LOC_REQ\020\300\002\022\021\n\014SEND_LOC_REP\020\346\001"
+    "\022\024\n\017QUERY_BY_ID_REQ\020\301\002\022\024\n\017QUERY_BY_ID_RE"
+    "P\020\347\001\022\020\n\013FWD_LOC_REQ\020\323\001\022\017\n\013FWD_LOC_REP\020yB"
+    "0\n\034com.luyun.whereareyou.sharedB\020TrackEv"
+    "entProtos", 529);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "proto/trackevent.proto", &protobuf_RegisterTypes);
   TrackEvent::default_instance_ = new TrackEvent();
@@ -159,6 +161,7 @@ const int TrackEvent::kTrackerYFieldNumber;
 const int TrackEvent::kTrackeeFieldNumber;
 const int TrackEvent::kTrackeeXFieldNumber;
 const int TrackEvent::kTrackeeYFieldNumber;
+const int TrackEvent::kTrackeeDescFieldNumber;
 #endif  // !_MSC_VER
 
 TrackEvent::TrackEvent()
@@ -185,6 +188,7 @@ void TrackEvent::SharedCtor() {
   trackee_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   trackee_x_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   trackee_y_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  trackee_desc_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -210,6 +214,9 @@ void TrackEvent::SharedDtor() {
   }
   if (trackee_y_ != &::google::protobuf::internal::kEmptyString) {
     delete trackee_y_;
+  }
+  if (trackee_desc_ != &::google::protobuf::internal::kEmptyString) {
+    delete trackee_desc_;
   }
   if (this != default_instance_) {
   }
@@ -267,6 +274,13 @@ void TrackEvent::Clear() {
     if (has_trackee_y()) {
       if (trackee_y_ != &::google::protobuf::internal::kEmptyString) {
         trackee_y_->clear();
+      }
+    }
+  }
+  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    if (has_trackee_desc()) {
+      if (trackee_desc_ != &::google::protobuf::internal::kEmptyString) {
+        trackee_desc_->clear();
       }
     }
   }
@@ -414,6 +428,23 @@ bool TrackEvent::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(74)) goto parse_trackee_desc;
+        break;
+      }
+      
+      // optional string trackee_desc = 9;
+      case 9: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_trackee_desc:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_trackee_desc()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+            this->trackee_desc().data(), this->trackee_desc().length(),
+            ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -501,6 +532,15 @@ void TrackEvent::SerializeWithCachedSizes(
       8, this->trackee_y(), output);
   }
   
+  // optional string trackee_desc = 9;
+  if (has_trackee_desc()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->trackee_desc().data(), this->trackee_desc().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      9, this->trackee_desc(), output);
+  }
+  
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -580,6 +620,16 @@ void TrackEvent::SerializeWithCachedSizes(
         8, this->trackee_y(), target);
   }
   
+  // optional string trackee_desc = 9;
+  if (has_trackee_desc()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->trackee_desc().data(), this->trackee_desc().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        9, this->trackee_desc(), target);
+  }
+  
   if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
@@ -647,6 +697,15 @@ int TrackEvent::ByteSize() const {
     }
     
   }
+  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    // optional string trackee_desc = 9;
+    if (has_trackee_desc()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->trackee_desc());
+    }
+    
+  }
   if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
@@ -698,6 +757,11 @@ void TrackEvent::MergeFrom(const TrackEvent& from) {
       set_trackee_y(from.trackee_y());
     }
   }
+  if (from._has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    if (from.has_trackee_desc()) {
+      set_trackee_desc(from.trackee_desc());
+    }
+  }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
@@ -729,6 +793,7 @@ void TrackEvent::Swap(TrackEvent* other) {
     std::swap(trackee_, other->trackee_);
     std::swap(trackee_x_, other->trackee_x_);
     std::swap(trackee_y_, other->trackee_y_);
+    std::swap(trackee_desc_, other->trackee_desc_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

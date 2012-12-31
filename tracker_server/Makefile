@@ -1,14 +1,14 @@
 #started with '#' are comments
-LIB=-lzmq -lprotobuf
+LIB=-lzmq -lprotobuf -llog4cplus
 
 BIN_PATH=bin
-PRG=tracker_server
+PRG=tracker_srv
 OBJ=*.o
 
 CC=g++
 CC_FLAG=-Wall
 
-all: tracker_server
+all: tracker_srv
 
 .cpp.o:
 	@echo "Compile $(OBJ) begin......"
@@ -20,7 +20,7 @@ all: tracker_server
 	$(CC) $(CC_FLAG) -c $<
 	@echo "Compile $(OBJ) end......"
 
-tracker_server: tracker_server.o trackevent.pb.o
+tracker_srv: tracker_server.o trackevent.pb.o my_log.o
 	@echo "Link tracker_server begin......"
 	$(CC) $(CC_FLAG) -o $(BIN_PATH)/$@ $^ $(LIB)
 	@echo "Link tracker_server end......"

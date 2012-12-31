@@ -2,8 +2,13 @@
 //
 
 #include "zhelpers.hpp"
+#include "my_log.h"
 #include "proto/trackevent.pb.h"
 #include <queue>
+
+#define LOG_ERR(inf) LOG4CPLUS_ERROR(log, inf)
+#define LOG_INF(inf) LOG4CPLUS_INFO(log, inf)
+#define LOG_DBG(inf) LOG4CPLUS_DEBUG(log, inf)
 
 const int RANDOMSEED = 19752012;
 
@@ -40,7 +45,7 @@ class TrackEventHelper
     
     void parseFromWire(std::string& msg, zmq::socket_t& socket);
     std::map<std::string, com::luyun::whereareyou::shared::TrackEvent*>::iterator
-    	findOrCreate(com::luyun::whereareyou::shared::TrackEvent* pTrackEvent);
+    	findOrCreate(com::luyun::whereareyou::shared::TrackEvent& pTrackEvent);
     
     std::string genKey(com::luyun::whereareyou::shared::TrackEvent* pTrackEvent)
     {

@@ -1,0 +1,29 @@
+// See README.txt for information and build instructions.
+
+package com.luyun.whereareyou.shared;
+
+option java_package = "com.luyun.whereareyou.shared";
+option java_outer_classname = "TrackEventProtos";
+
+message TrackEvent {
+  enum EventType {
+    START_TRACKING_REQ = 120; //from tracker_client(1) to tracker_server(2)
+    START_TRACKING_REP = 210; //from tracker_server(2) to tracker_client(1)
+    SEND_LOC_REQ = 320; //from trackee_server(3) to tracker_server(2)
+    SEND_LOC_REP = 230; //from tracker_server(2) to trackee_server(3)
+    QUERY_BY_ID_REQ = 321; //from trackee_server(3) to tracker_server(2)
+    QUERY_BY_ID_REP = 231; //from tracker_server(2) to trackee_server(3)
+    FWD_LOC_REQ = 211; //from tracker_server(2) to tracker_client(1)
+    FWD_LOC_REP = 121; //from tracker_client(1) to trackee_server(2)
+  }
+  required EventType type = 1 [default = START_TRACKING_REQ];
+  optional int32 id = 2;
+  
+  optional string tracker = 3;
+  optional string tracker_x = 4;
+  optional string tracker_y = 5;
+  optional string trackee = 6;
+  optional string trackee_x = 7;
+  optional string trackee_y = 8;
+  optional string trackee_desc = 9;
+}
