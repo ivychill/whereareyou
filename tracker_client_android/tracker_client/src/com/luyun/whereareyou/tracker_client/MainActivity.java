@@ -161,37 +161,35 @@ public class MainActivity extends MapActivity implements LocationListener {
 				Toast.makeText(getApplicationContext(), "btn_about!",
 						Toast.LENGTH_SHORT).show();
 
-				Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+				Intent intent = new Intent(MainActivity.this,
+						AboutActivity.class);
 				startActivity(intent);
 				// TODO
 			}
 		});
 
 		ImageButton btn_toggle = (ImageButton) findViewById(R.id.btn_toggle);
-		btn_toggle.getBackground().setAlpha(64);
-		
+		btn_toggle.getBackground().setAlpha(16);
 		btn_toggle.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Log.d(TAG, "click btn_toggle button.");
-				Toast.makeText(getApplicationContext(), "btn_toggle!",
-						Toast.LENGTH_SHORT).show();
+				// Toast.makeText(getApplicationContext(), "btn_toggle!",
+				// Toast.LENGTH_SHORT).show();
 
 				// TODO
 			}
 		});
 
 		ImageButton btn_sat = (ImageButton) findViewById(R.id.btn_sat);
-		btn_sat.getBackground().setAlpha(64);
+		btn_sat.getBackground().setAlpha(16);
 		btn_sat.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				// Log.d(TAG, "click btn_sat button.");
 				// Toast.makeText(getApplicationContext(), "卫星!",
 				// Toast.LENGTH_SHORT).show();
 
-				mMapView.invalidate();
 				mMapView.setSatellite(!mMapView.isSatellite());
 				// mMapView.invalidate();
-				// TODO
 			}
 		});
 	}
@@ -302,8 +300,8 @@ public class MainActivity extends MapActivity implements LocationListener {
 							+ Constants.TRACKEE_SERVER_PORT + "/t/"
 							+ trackEventOnWire.getId();
 
-					// postMsg("18688776399", strHyperLink);
-					postMsg(trackEventOnWire.getTrackee(), strHyperLink);
+//					postMsg("18688776399", strHyperLink);
+					 postMsg(trackEventOnWire.getTrackee(), strHyperLink);
 					break;
 				case FWD_LOC_REQ:
 					procLocationRpt(trackEventOnWire);
@@ -322,7 +320,7 @@ public class MainActivity extends MapActivity implements LocationListener {
 
 		String tips = "定位结果";
 		GeoPoint point = mMyPoint;
-		GeoPoint anchor = null;
+		GeoPoint center = null;
 
 		if (app.mTrackees.size() > 0) {
 			Iterator<String> it = app.mTrackees.keySet().iterator();
@@ -335,31 +333,22 @@ public class MainActivity extends MapActivity implements LocationListener {
 
 				Drawable marker;
 				OverlayT item;
-				if (phone == mDeviceID) {
-					// my location
-					// marker =
-					// getResources().getDrawable(R.drawable.bubble_32);
-					// item = new OverlayT(marker, point, TrackerActivity.this,
-					// "我在这里", "我的位置");
-				} else {
-					// marker = getResources()
-					// .getDrawable(R.drawable.bubble_other);
-					//
-					// item = new OverlayT(marker, point, TrackerActivity.this,
-					// app.getPeopleNameFromPerson(phone), tips);
+				marker = getResources().getDrawable(R.drawable.marker_red_32);
 
-					anchor = point;
+				item = new OverlayT(marker, point, MainActivity.this,
+						app.getPeopleNameFromPerson(phone), tips);
+
+				center = point;
+
+				if (mMapView.getOverlays() != null) {
+					mMapView.getOverlays().add(item);
 				}
-
-				// if (mMapView.getOverlays() != null) {
-				// mMapView.getOverlays().add(item);
-				// }
-				//
-				// mOveritems.add(item);
+				mOveritems.add(item);
 			}
+
 			// move to the latest point
-			if (anchor != null) {
-				mMapController.setCenter(anchor);
+			if (center != null) {
+				mMapController.animateTo(center);
 			} else {
 				mMapController.animateTo(mMyPoint);
 			}
@@ -372,14 +361,13 @@ public class MainActivity extends MapActivity implements LocationListener {
 		if (mMapView.getOverlays() != null) {
 			mMapView.getOverlays().removeAll(mOveritems);
 		}
-
 		mOveritems.clear();
 	}
 
 	private void updateViewMap() {
-		// delAllMarker();
-		// addMarker();
-		mMapView.refreshDrawableState();
+		delAllMarker();
+		addMarker();
+		mMapView.invalidate();
 	}
 
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -539,23 +527,18 @@ public class MainActivity extends MapActivity implements LocationListener {
 	public void onLocationChanged(Location loc) {
 		// TODO Auto-generated method stub
 		Log.d(TAG, "onLocationChanged " + loc.toString());
-		if (app.mTrackees.size() == 0) {
-			// app.mBMapMan.getLocationManager().removeUpdates(this);
-			// app.mBMapMan.getLocationManager().setNotifyInternal(10, 5);
-			// //
-			// max
-			// 60seconds
-		}
+
+		// 降低频率
+		if (mMyPoint == null)
+			app.mBMapMan.getLocationManager().setNotifyInternal(60, 10);
 
 		if (loc != null) {
 			mMyPoint = new GeoPoint((int) (loc.getLatitude() * 1E6),
 					(int) (loc.getLongitude() * 1E6));
 
-			// app.mTrackees.put(mDeviceID, mypoint);
-			// updateViewMap();
-			mMapView.getController().animateTo(mMyPoint);
+			//
+			if (TrackerApp.instance.mTrackees.size() == 0)
+				mMapView.getController().animateTo(mMyPoint);
 		}
-
-		// mMapView.invalidate();
 	}
 }

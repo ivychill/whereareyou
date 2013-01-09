@@ -68,6 +68,7 @@ void TrackEventHelper::parseFromWire(std::string& msg, zmq::socket_t& socket)
             pTrackEventOnAir = it->second;
             pTrackEventOnAir->set_trackee_x(pTrackEventOnWire->trackee_x());
             pTrackEventOnAir->set_trackee_y(pTrackEventOnWire->trackee_y());
+            pTrackEventOnAir->set_trackee_desc(pTrackEventOnWire.get()->trackee_desc());
 
             //send back track event to client
             std::string strOnWire;

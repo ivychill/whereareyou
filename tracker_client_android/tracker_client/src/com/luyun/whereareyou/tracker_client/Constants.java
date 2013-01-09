@@ -20,7 +20,6 @@ public class Constants {
 
 	public static final int TRACKER_SERVER_PORT=8007; 
 	public static final int TRACKEE_SERVER_PORT=8008;	
-//	public static final String TRACKER_SERVER_HOST="192.168.1.104";	
 	public static final String TRACKER_SERVER_HOST="42.121.99.247";	
 	
 	public static final String ZMQ_QUITTING_CMD = "QT";

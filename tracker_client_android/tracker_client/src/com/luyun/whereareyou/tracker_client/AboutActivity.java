@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class AboutActivity extends Activity {
 
-	private final static String TAG = "GetFriActivity";
+	private final static String TAG = "AboutActivity";
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

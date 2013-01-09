@@ -96,8 +96,8 @@ public class GetFriActivity extends Activity {
 						setResult(RESULT_CANCELED, it);
 						finish();
 					}
-					Toast.makeText(getApplicationContext(), name,
-							Toast.LENGTH_SHORT).show();
+//					Toast.makeText(getApplicationContext(), name,
+//							Toast.LENGTH_SHORT).show();
 
 					Bundle bundle = new Bundle();
 					String rslt[] = { name, phoneNo };
