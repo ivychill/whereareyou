@@ -33,6 +33,6 @@ public class MainActivityTest extends
 		solo.clickOnButton(1); // exit btn no
 		solo.goBack();
 		solo.clickOnButton(0);  //exit btn yes
-		solo.assertCurrentActivity("Expected Main activity", "Exit");
+		solo.assertCurrentActivity("Expected Exit activity", "Exit");
 	}
 }

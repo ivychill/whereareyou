@@ -7,8 +7,9 @@ public class Constants {
 	public static final int ERROR=1001;
 	public static final int FIRST_LOCATION=1002;
 	
-	
-	public static final int PICK_CONTACT = 3;
+	public static final int MAIN_GET_CONTACT = 2;  //从通讯录获取联系人
+	public static final int PICK_CONTACT = 3;  //从通讯录获取联系人
+	public static final int SEARCH_DEST = 4;  //从地图搜索目的地址
 	
 	public static final int REOCODER_RESULT=3000;//地理编码结果
 	public static final int DIALOG_LAYER=4000;

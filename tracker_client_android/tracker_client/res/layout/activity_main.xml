@@ -1,16 +1,79 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" 
-    android:id = "@+id/main">
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
 
-    <com.baidu.mapapi.MapView
-        android:id="@+id/bmapsView"
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:clickable="true" 
-        android:visibility="visible">
-    </com.baidu.mapapi.MapView>
-    
-</RelativeLayout>
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center"
+            android:clickable="true"
+            android:visibility="visible" >
+        </com.baidu.mapapi.MapView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="12dp" >
+
+            <ImageButton
+                android:id="@+id/btn_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:orientation="horizontal"
+                android:src="@drawable/icon_sms" />
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:orientation="horizontal"
+                android:src="@drawable/icon_dest"/>
+
+            <Button
+                android:id="@+id/btn_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:orientation="horizontal"
+                android:text="about" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/icon_myloc"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_layers_sate" 
+            />
+        
+    </RelativeLayout>
+
+</FrameLayout>

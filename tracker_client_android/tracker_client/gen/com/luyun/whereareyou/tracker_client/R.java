@@ -26,40 +26,88 @@ public final class R {
     }
     public static final class drawable {
         public static final int btn_close=0x7f020000;
-        public static final int btn_style_green=0x7f020001;
-        public static final int btn_style_one_disabled=0x7f020002;
-        public static final int btn_style_one_focused=0x7f020003;
-        public static final int btn_style_one_normal=0x7f020004;
-        public static final int btn_style_one_pressed=0x7f020005;
-        public static final int btn_style_two_focused=0x7f020006;
-        public static final int btn_style_two_normal=0x7f020007;
-        public static final int btn_style_two_pressed=0x7f020008;
-        public static final int btn_style_white=0x7f020009;
-        public static final int button_shape=0x7f02000a;
-        public static final int confirm_dialog_bg=0x7f02000b;
-        public static final int confirm_dialog_bg2=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int loading=0x7f02000e;
-        public static final int menu_bg=0x7f02000f;
-        public static final int menu_bg_normal=0x7f020010;
-        public static final int menu_bg_normal2=0x7f020011;
-        public static final int menu_bg_pressed=0x7f020012;
-        public static final int menu_btn_bg=0x7f020013;
-        public static final int title_bar=0x7f020014;
+        public static final int btn_fri_add=0x7f020001;
+        public static final int btn_style_green=0x7f020002;
+        public static final int btn_style_one_disabled=0x7f020003;
+        public static final int btn_style_one_focused=0x7f020004;
+        public static final int btn_style_one_normal=0x7f020005;
+        public static final int btn_style_one_pressed=0x7f020006;
+        public static final int btn_style_two_focused=0x7f020007;
+        public static final int btn_style_two_normal=0x7f020008;
+        public static final int btn_style_two_pressed=0x7f020009;
+        public static final int btn_style_white=0x7f02000a;
+        public static final int button_shape=0x7f02000b;
+        public static final int confirm_dialog_bg=0x7f02000c;
+        public static final int confirm_dialog_bg2=0x7f02000d;
+        public static final int fri_add_normal=0x7f02000e;
+        public static final int fri_add_pressed=0x7f02000f;
+        public static final int ft_loc_normal_normal=0x7f020010;
+        public static final int grid=0x7f020011;
+        public static final int header_bg=0x7f020012;
+        public static final int ic_launcher=0x7f020013;
+        public static final int ic_preference_first_normal=0x7f020014;
+        public static final int ic_preference_first_pressed=0x7f020015;
+        public static final int ic_preference_last_normal=0x7f020016;
+        public static final int ic_preference_last_pressed=0x7f020017;
+        public static final int ic_preference_normal=0x7f020018;
+        public static final int ic_preference_pressed=0x7f020019;
+        public static final int ic_preference_single_normal=0x7f02001a;
+        public static final int ic_preference_single_pressed=0x7f02001b;
+        public static final int icon_dest=0x7f02001c;
+        public static final int icon_layers_sate=0x7f02001d;
+        public static final int icon_myloc=0x7f02001e;
+        public static final int icon_sms=0x7f02001f;
+        public static final int loading=0x7f020020;
+        public static final int menu_bg=0x7f020021;
+        public static final int menu_bg_normal=0x7f020022;
+        public static final int menu_bg_normal2=0x7f020023;
+        public static final int menu_bg_pressed=0x7f020024;
+        public static final int menu_btn_bg=0x7f020025;
+        public static final int mm_submenu=0x7f020026;
+        public static final int mm_submenu_normal=0x7f020027;
+        public static final int mm_submenu_pressed=0x7f020028;
+        public static final int preference_first_item=0x7f020029;
+        public static final int preference_item=0x7f02002a;
+        public static final int preference_last_item=0x7f02002b;
+        public static final int preference_single_item=0x7f02002c;
+        public static final int search=0x7f02002d;
+        public static final int search_bar_edit_bg=0x7f02002e;
+        public static final int search_bar_edit_normal=0x7f02002f;
+        public static final int search_bar_edit_pressed=0x7f020030;
+        public static final int title_bar=0x7f020031;
     }
     public static final class id {
-        public static final int bmapsView=0x7f070001;
-        public static final int exitBtn0=0x7f070003;
-        public static final int exitBtn1=0x7f070004;
-        public static final int exit_layout=0x7f070002;
-        public static final int main=0x7f070000;
-        public static final int menu_close=0x7f070005;
-        public static final int menu_close_btn=0x7f070006;
+        public static final int bmapsView=0x7f070003;
+        public static final int btn_about=0x7f070006;
+        public static final int btn_fri=0x7f07000f;
+        public static final int btn_sat=0x7f070008;
+        public static final int btn_share=0x7f070005;
+        public static final int btn_sms=0x7f070004;
+        public static final int btn_toggle=0x7f070007;
+        public static final int exitBtn0=0x7f07000a;
+        public static final int exitBtn1=0x7f07000b;
+        public static final int exit_layout=0x7f070009;
+        public static final int homepage=0x7f070001;
+        public static final int img_search=0x7f070013;
+        public static final int listAddress=0x7f070015;
+        public static final int loadMoreButton=0x7f070011;
+        public static final int main=0x7f070002;
+        public static final int menu_close=0x7f07000c;
+        public static final int menu_close_btn=0x7f07000d;
+        public static final int searchMapView=0x7f070014;
+        public static final int title=0x7f070000;
+        public static final int txt_fri=0x7f07000e;
+        public static final int txt_search=0x7f070012;
+        public static final int txt_sms=0x7f070010;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int exit_dialog=0x7f030001;
-        public static final int exit_menu=0x7f030002;
+        public static final int about_activity=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int exit_dialog=0x7f030002;
+        public static final int exit_menu=0x7f030003;
+        public static final int get_fri_activity=0x7f030004;
+        public static final int loadmore=0x7f030005;
+        public static final int search_activity=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
@@ -91,12 +139,6 @@ public final class R {
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
  API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f060012;
         public static final int AppTheme=0x7f060000;

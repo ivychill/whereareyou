@@ -46,3 +46,4 @@ gem "rvm-capistrano", :group => :development
 gem "ruby_protobuf"
 #gem "zmq"
 gem "ffi-rzmq"
+gem "thin"

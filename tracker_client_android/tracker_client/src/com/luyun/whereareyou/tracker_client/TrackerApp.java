@@ -69,6 +69,7 @@ public class TrackerApp extends Application {
 		mBMapMan = new BMapManager(this);
 		mBMapMan.init(this.mStrKey, new MyGeneralListener());
 		mBMapMan.getLocationManager().setNotifyInternal(5, 2);
+		mBMapMan.start();
 		
 		mTrackees = new java.util.HashMap<String, GeoPoint>();
 	}
@@ -81,6 +82,7 @@ public class TrackerApp extends Application {
 			mBMapMan.destroy();
 			mBMapMan = null;
 		}
+		Log.d(TAG, "on terminate");
 		super.onTerminate();
 	}
 
@@ -88,7 +90,7 @@ public class TrackerApp extends Application {
 	public boolean isHome(){  
 	    ActivityManager mActivityManager = (ActivityManager)getSystemService(Context.ACTIVITY_SERVICE);  
 	    List<RunningTaskInfo> rti = mActivityManager.getRunningTasks(1);
-	    String homePkgName = "com.luyun.whereareyou.tracker_client_android";
+	    String homePkgName = "com.luyun.whereareyou.tracker_client";
 	    return homePkgName.contains(rti.get(0).topActivity.getPackageName());  
 	}  
 	

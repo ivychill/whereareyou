@@ -12,14 +12,18 @@ import com.baidu.mapapi.MapView;
 import com.baidu.mapapi.MyLocationOverlay;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.luyun.whereareyou.shared.TrackEventProtos.TrackEvent;
+import com.luyun.whereareyou.shared.TrackEventProtos.TrackEvent.EventType;
+
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo.State;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -29,6 +33,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.database.Cursor;
 import android.support.v4.app.NotificationCompat;
 import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
@@ -38,7 +43,11 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.WindowManager.LayoutParams;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.Toast;
@@ -48,12 +57,11 @@ public class MainActivity extends MapActivity implements LocationListener {
 	private final static String TAG = "MainActivity";
 	private ZMQService mzService;
 	private boolean mIsZmqBound;
-
+	final static String mSMS = "想知道你在哪，同意请点击";
 	private ConnectivityChangeReceiver mConnectivityChangeReceiver;
 	private MapView mMapView = null;
 	private MyLocationOverlay mLocationOverlay = null; // 定位图层
 	private MapController mMapController = null;
-	private String mSMS = "想知道你在哪，同意请点击";
 	private String mDeviceID;
 	private PopupWindow menuWindow;
 	private boolean menu_display;
@@ -62,6 +70,7 @@ public class MainActivity extends MapActivity implements LocationListener {
 	private LinearLayout mCloseBtn;
 	private ArrayList<OverlayT> mOveritems = null;
 
+	public GeoPoint mMyPoint;
 	static MainActivity instance;
 
 	@Override
@@ -76,10 +85,11 @@ public class MainActivity extends MapActivity implements LocationListener {
 			app.mBMapMan.init(app.mStrKey, new TrackerApp.MyGeneralListener());
 		}
 
-		app.mBMapMan.start();
 		super.initMapActivity(app.mBMapMan);
 		mOveritems = new ArrayList<OverlayT>();
+
 		createMap();
+		initBtn();
 
 		TelephonyManager tm = (TelephonyManager) this
 				.getSystemService(Context.TELEPHONY_SERVICE);
@@ -89,38 +99,101 @@ public class MainActivity extends MapActivity implements LocationListener {
 				ConnectivityManager.CONNECTIVITY_ACTION));
 
 		app.mBMapMan.getLocationManager().requestLocationUpdates(this);
+		bindZMQService();
 	}
 
 	private void createMap() {
 		mMapView = (MapView) findViewById(R.id.bmapsView);
+		// mMapView.setBuiltInZoomControls(true);
+
+		// mMapView.setDragMode(MapView.DRAG_MODE_SCALE);
+		// 设置在缩放动画过程中是否绘制overlay，默认为不绘制
+		// mMapView.setDrawOverlayWhenZooming(true);
+
 		mMapController = mMapView.getController(); // 得到mMapView的控制权,可以用它控制和驱动平移和缩放
 		if (mMapController == null) {
 			Log.d(TAG, "can't get controller");
 			return;
 		}
+
+		mMapController.setZoom(15); // 设置地图zoom级别
+
 		// 添加定位图层
 		mLocationOverlay = new MyLocationOverlay(this, mMapView);
 		mLocationOverlay.enableMyLocation();
 		mMapView.getOverlays().add(mLocationOverlay);
 	}
 
-	public void onLocationChanged(Location loc) {
-		Log.d(TAG, "onLocationChanged " + loc.toString());
-		if (app.mTrackees.size() == 0) {
-			// app.mBMapMan.getLocationManager().removeUpdates(this);
-			app.mBMapMan.getLocationManager().setNotifyInternal(10, 5); // max
-																			// 60seconds
-			mMapController.setZoom(15); // 设置地图zoom级别
-		}
+	private void initBtn() {
+		ImageButton btn_sms = (ImageButton) findViewById(R.id.btn_sms);
+		btn_sms.getBackground().setAlpha(64);
+		btn_sms.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Log.d(TAG, "click sms button.");
+				Toast.makeText(getApplicationContext(), "需要发送短信!",
+						Toast.LENGTH_SHORT).show();
 
-		if (loc != null) {
-			GeoPoint mypoint = new GeoPoint((int) (loc.getLatitude() * 1E6),
-					(int) (loc.getLongitude() * 1E6));
+				Intent intent = new Intent(MainActivity.this,
+						GetFriActivity.class);
+				startActivityForResult(intent, Constants.MAIN_GET_CONTACT);
+			}
+		});
 
-			app.mTrackees.put(mDeviceID, mypoint);
-			updateViewMap();
-			mMapController.animateTo(mypoint);
-		}
+		ImageButton btn_share = (ImageButton) findViewById(R.id.btn_share);
+		btn_share.getBackground().setAlpha(64);
+		btn_share.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Log.d(TAG, "click btn_share button.");
+				Toast.makeText(getApplicationContext(), "btn_share!",
+						Toast.LENGTH_SHORT).show();
+
+				Intent intent = new Intent(MainActivity.this,
+						SearchActivity.class);
+				startActivityForResult(intent, Constants.SEARCH_DEST);
+				// TODO
+			}
+		});
+
+		Button btn_about = (Button) findViewById(R.id.btn_about);
+		btn_about.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Log.d(TAG, "click btn_about button.");
+				Toast.makeText(getApplicationContext(), "btn_about!",
+						Toast.LENGTH_SHORT).show();
+
+				Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+				startActivity(intent);
+				// TODO
+			}
+		});
+
+		ImageButton btn_toggle = (ImageButton) findViewById(R.id.btn_toggle);
+		btn_toggle.getBackground().setAlpha(64);
+		
+		btn_toggle.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Log.d(TAG, "click btn_toggle button.");
+				Toast.makeText(getApplicationContext(), "btn_toggle!",
+						Toast.LENGTH_SHORT).show();
+
+				// TODO
+			}
+		});
+
+		ImageButton btn_sat = (ImageButton) findViewById(R.id.btn_sat);
+		btn_sat.getBackground().setAlpha(64);
+		btn_sat.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				// Log.d(TAG, "click btn_sat button.");
+				// Toast.makeText(getApplicationContext(), "卫星!",
+				// Toast.LENGTH_SHORT).show();
+
+				mMapView.invalidate();
+				mMapView.setSatellite(!mMapView.isSatellite());
+				// mMapView.invalidate();
+				// TODO
+			}
+		});
 	}
 
 	public boolean isConnectedToInternet() {
@@ -248,7 +321,7 @@ public class MainActivity extends MapActivity implements LocationListener {
 		Log.d(TAG, "addMarker");
 
 		String tips = "定位结果";
-		GeoPoint point = null;
+		GeoPoint point = mMyPoint;
 		GeoPoint anchor = null;
 
 		if (app.mTrackees.size() > 0) {
@@ -288,10 +361,10 @@ public class MainActivity extends MapActivity implements LocationListener {
 			if (anchor != null) {
 				mMapController.setCenter(anchor);
 			} else {
-				mMapController.animateTo(point);
+				mMapController.animateTo(mMyPoint);
 			}
 
-			mMapController.setZoom(15); // 设置地图zoom级别
+			// mMapController.setZoom(15); // 设置地图zoom级别
 		}
 	}
 
@@ -304,8 +377,9 @@ public class MainActivity extends MapActivity implements LocationListener {
 	}
 
 	private void updateViewMap() {
-		delAllMarker();
-		addMarker();
+		// delAllMarker();
+		// addMarker();
+		mMapView.refreshDrawableState();
 	}
 
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -410,25 +484,78 @@ public class MainActivity extends MapActivity implements LocationListener {
 			mzService.reconnect();
 		}
 	}
-	
-	protected void onResume() {
-		// SharedPreferences sp = getSharedPreferences("com.luyun.easyway95",
-		// MODE_PRIVATE);
-		// UserProfile up = new UserProfile(sp);
-		// //Log.d(TAG, up.toString());
-		// mHomeAddr = up.getHomeAddr();
 
+	protected void onResume() {
 		Log.d(TAG, "onResume");
 		super.onResume();
 		app.mBMapMan.start();
 		updateViewMap();
 	}
-	
+
 	protected void onDestroy() {
 		super.onDestroy();
 		Log.d(TAG, "onDestroy");
 		unbindService();
 		unregisterReceiver(mConnectivityChangeReceiver);
+		TrackerApp.instance.mBMapMan.stop();
 	}
 
+	protected void onActivityResult(int reqCode, int resultCode, Intent intent) {
+		super.onActivityResult(reqCode, resultCode, intent);
+
+		switch (reqCode) {
+		case (Constants.MAIN_GET_CONTACT):
+			if (resultCode == Activity.RESULT_OK) {
+				Log.d(TAG, "get contact");
+
+				Bundle bundle = intent.getExtras();
+				if (bundle != null)
+					Log.d(TAG, "get CONTACT");
+				else
+					return;
+
+				String name = bundle.getStringArray("contact")[0];
+				String phoneNo = bundle.getStringArray("contact")[1];
+
+				TrackEvent mTrackEventOnAir = TrackEvent.newBuilder()
+						.setTrackee(phoneNo).setTracker(mDeviceID)
+						.setType(EventType.START_TRACKING_REQ).build();
+				Log.d(TAG, mTrackEventOnAir.toString());
+				byte[] dataToSvr = mTrackEventOnAir.toByteArray();
+
+				// TODO 网络连接是否成功，失败情况下
+				mzService.sendMsgToSvr(dataToSvr);
+
+				Toast.makeText(getApplicationContext(), name,
+						Toast.LENGTH_SHORT).show();
+			}
+			break;
+
+		case Constants.SEARCH_DEST:
+			break;
+		}
+	}
+
+	public void onLocationChanged(Location loc) {
+		// TODO Auto-generated method stub
+		Log.d(TAG, "onLocationChanged " + loc.toString());
+		if (app.mTrackees.size() == 0) {
+			// app.mBMapMan.getLocationManager().removeUpdates(this);
+			// app.mBMapMan.getLocationManager().setNotifyInternal(10, 5);
+			// //
+			// max
+			// 60seconds
+		}
+
+		if (loc != null) {
+			mMyPoint = new GeoPoint((int) (loc.getLatitude() * 1E6),
+					(int) (loc.getLongitude() * 1E6));
+
+			// app.mTrackees.put(mDeviceID, mypoint);
+			// updateViewMap();
+			mMapView.getController().animateTo(mMyPoint);
+		}
+
+		// mMapView.invalidate();
+	}
 }

@@ -228,6 +228,17 @@ class TrackEvent : public ::google::protobuf::Message {
   inline ::std::string* mutable_trackee_y();
   inline ::std::string* release_trackee_y();
   
+  // optional string trackee_desc = 9;
+  inline bool has_trackee_desc() const;
+  inline void clear_trackee_desc();
+  static const int kTrackeeDescFieldNumber = 9;
+  inline const ::std::string& trackee_desc() const;
+  inline void set_trackee_desc(const ::std::string& value);
+  inline void set_trackee_desc(const char* value);
+  inline void set_trackee_desc(const char* value, size_t size);
+  inline ::std::string* mutable_trackee_desc();
+  inline ::std::string* release_trackee_desc();
+  
   // @@protoc_insertion_point(class_scope:com.luyun.whereareyou.shared.TrackEvent)
  private:
   inline void set_has_type();
@@ -246,6 +257,8 @@ class TrackEvent : public ::google::protobuf::Message {
   inline void clear_has_trackee_x();
   inline void set_has_trackee_y();
   inline void clear_has_trackee_y();
+  inline void set_has_trackee_desc();
+  inline void clear_has_trackee_desc();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
@@ -257,9 +270,10 @@ class TrackEvent : public ::google::protobuf::Message {
   ::std::string* trackee_;
   ::std::string* trackee_x_;
   ::std::string* trackee_y_;
+  ::std::string* trackee_desc_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(8 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(9 + 31) / 32];
   
   friend void  protobuf_AddDesc_proto_2ftrackevent_2eproto();
   friend void protobuf_AssignDesc_proto_2ftrackevent_2eproto();
@@ -664,6 +678,64 @@ inline ::std::string* TrackEvent::release_trackee_y() {
   } else {
     ::std::string* temp = trackee_y_;
     trackee_y_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional string trackee_desc = 9;
+inline bool TrackEvent::has_trackee_desc() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void TrackEvent::set_has_trackee_desc() {
+  _has_bits_[0] |= 0x00000100u;
+}
+inline void TrackEvent::clear_has_trackee_desc() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline void TrackEvent::clear_trackee_desc() {
+  if (trackee_desc_ != &::google::protobuf::internal::kEmptyString) {
+    trackee_desc_->clear();
+  }
+  clear_has_trackee_desc();
+}
+inline const ::std::string& TrackEvent::trackee_desc() const {
+  return *trackee_desc_;
+}
+inline void TrackEvent::set_trackee_desc(const ::std::string& value) {
+  set_has_trackee_desc();
+  if (trackee_desc_ == &::google::protobuf::internal::kEmptyString) {
+    trackee_desc_ = new ::std::string;
+  }
+  trackee_desc_->assign(value);
+}
+inline void TrackEvent::set_trackee_desc(const char* value) {
+  set_has_trackee_desc();
+  if (trackee_desc_ == &::google::protobuf::internal::kEmptyString) {
+    trackee_desc_ = new ::std::string;
+  }
+  trackee_desc_->assign(value);
+}
+inline void TrackEvent::set_trackee_desc(const char* value, size_t size) {
+  set_has_trackee_desc();
+  if (trackee_desc_ == &::google::protobuf::internal::kEmptyString) {
+    trackee_desc_ = new ::std::string;
+  }
+  trackee_desc_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TrackEvent::mutable_trackee_desc() {
+  set_has_trackee_desc();
+  if (trackee_desc_ == &::google::protobuf::internal::kEmptyString) {
+    trackee_desc_ = new ::std::string;
+  }
+  return trackee_desc_;
+}
+inline ::std::string* TrackEvent::release_trackee_desc() {
+  clear_has_trackee_desc();
+  if (trackee_desc_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = trackee_desc_;
+    trackee_desc_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
   }
 }

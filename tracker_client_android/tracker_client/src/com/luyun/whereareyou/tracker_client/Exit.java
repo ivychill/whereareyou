@@ -3,6 +3,7 @@ package com.luyun.whereareyou.tracker_client;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 public class Exit extends Activity {
 	//private MyDialog dialog;
 	private LinearLayout layout;
+	private static final String TAG = "EXIT";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,13 +37,14 @@ public class Exit extends Activity {
 		return true;
 	}
 	
-	public void exitbutton1(View v) {  
+	public void exitbutton1(View v) {
+		Log.d(TAG, "exitbutton1");
     	this.finish();    	
       }  
 	public void exitbutton0(View v) {  
     	this.finish();
+    	Log.d(TAG, "exitbutton0");
     	MainActivity.instance.finish();//关闭Main 这个Activity
       }  
-	
 }
 

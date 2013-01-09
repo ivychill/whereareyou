@@ -8,7 +8,9 @@
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
     = stylesheet_link_tag    "application", :media => "all"
-    == <script src="http://api.amap.com/webapi/init?v=1.0"></script>
+    == <script src="http://api.map.baidu.com/api?v=1.4"></script>
+    == <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+    == <link  rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
     = javascript_include_tag "application"
     = csrf_meta_tags
     = yield(:head)

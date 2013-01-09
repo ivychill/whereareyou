@@ -27,6 +27,7 @@
 #   optional string trackee = 6;
 #   optional string trackee_x = 7;
 #   optional string trackee_y = 8;
+#   optional string trackee_desc = 9;
 # }
 
 require 'protobuf/message/message'
@@ -61,6 +62,7 @@ module Com
           optional :string, :trackee, 6
           optional :string, :trackee_x, 7
           optional :string, :trackee_y, 8
+          optional :string, :trackee_desc, 9
         end
       end
     end

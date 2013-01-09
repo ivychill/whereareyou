@@ -1,999 +1,346 @@
-[INFO] [tracker_server.cpp:219] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:12] - init ok. 
-[INFO] [tracker_server.cpp:230] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:21] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:234] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:21] - Рњоо
-:
-113.908492B	22.575897 
-[INFO] [tracker_server.cpp:21] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:21] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[DEBUG] [tracker_server.cpp:55] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:21] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:98] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:21] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:230] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:234] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - Рњоо
-:113.90849163138B22.575897130855 
-[INFO] [tracker_server.cpp:21] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[DEBUG] [tracker_server.cpp:55] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:98] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[INFO] [tracker_server.cpp:230] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:234] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - Рњоо
-:113.90849163138B22.575897130855 
-[INFO] [tracker_server.cpp:21] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[DEBUG] [tracker_server.cpp:55] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:98] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[INFO] [tracker_server.cpp:230] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:234] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - Рњоо
-:113.90849163138B22.575897130855 
-[INFO] [tracker_server.cpp:21] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[DEBUG] [tracker_server.cpp:55] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:98] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[INFO] [tracker_server.cpp:230] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:234] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - Рњоо
-:113.90849163138B22.575897130855 
-[INFO] [tracker_server.cpp:21] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[DEBUG] [tracker_server.cpp:55] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:98] [PID:2302] [TID:0x7fff7bcc0960] [2012-12-28 15:19:29] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849163138"
-trackee_y: "22.575897130855"
- 
-[INFO] [tracker_server.cpp:221] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:37] - init ok. 
-[INFO] [tracker_server.cpp:232] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:236] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - Рњоо
-:
-113.908492B	22.575897 
-[INFO] [tracker_server.cpp:21] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:22] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] -  
-[DEBUG] [tracker_server.cpp:57] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:100] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:232] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:236] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - Рњоо
-:
-113.908492B	22.575897 
-[INFO] [tracker_server.cpp:21] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:22] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] -  
-[DEBUG] [tracker_server.cpp:57] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:100] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:232] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:236] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - Рњоо
-:
-113.908492B	22.575897 
-[INFO] [tracker_server.cpp:21] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:22] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] -  
-[DEBUG] [tracker_server.cpp:57] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:100] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:46] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:232] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:48] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:236] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:48] - Рњоо
-:
-113.908492B	22.575897 
-[INFO] [tracker_server.cpp:21] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:48] - event on receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:22] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:48] -  
-[DEBUG] [tracker_server.cpp:57] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:48] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:100] [PID:2337] [TID:0x7fff7bcc0960] [2012-12-28 15:23:48] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908492"
-trackee_y: "22.575897"
- 
-[INFO] [tracker_server.cpp:220] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:25] - init ok. 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:27:32] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:57] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:57] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:57] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:57] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:32:58] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90839450711"
-trackee_y: "22.575933983193"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:13] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:13] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:13] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:13] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:34:14] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:231] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2390] [TID:0x7fff7bcc0960] [2012-12-28 15:36:47] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846088449"
-trackee_y: "22.575903872031"
- 
-[INFO] [tracker_server.cpp:220] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:25] - init ok. 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:39:33] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:07] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:08] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:08] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:08] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:08] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:231] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:10] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:10] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:56] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:10] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2476] [TID:0x7fff7bcc0960] [2012-12-28 15:40:10] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:222] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:45] - init ok. 
-[INFO] [tracker_server.cpp:233] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:51] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:52] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:52] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:52] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2500] [TID:0x7fff7bcc0960] [2012-12-28 15:40:52] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:222] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:36] - init ok. 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:41] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:41:52] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908452"
-trackee_y: "22.575883"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:47:53] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90845215714"
-trackee_y: "22.575883122521"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:00] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846034602"
-trackee_y: "22.575910392466"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908433"
-trackee_y: "22.575944"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908433"
-trackee_y: "22.575944"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908433"
-trackee_y: "22.575944"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:48:53] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908433"
-trackee_y: "22.575944"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:49:17] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:49:17] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90843"
-trackee_y: "22.575922"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:49:17] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:49:17] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90843"
-trackee_y: "22.575922"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:13] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:51:14] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90846"
-trackee_y: "22.57591"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:44] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:45] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:45] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:45] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:55:45] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:16] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:16] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.908515"
-trackee_y: "22.57586"
- 
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:16] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:16] - event to trackee server
- type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.908515"
-trackee_y: "22.57586"
- 
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+[INFO] [tracker_server.cpp:220] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:25:53] - init ok. 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90844"
+trackee_y: "22.575891"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+id: 19752012
+trackee_x: "113.90844"
+trackee_y: "22.575891"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90844"
+trackee_y: "22.575891"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:19] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+id: 19752012
+trackee_x: "113.90844"
+trackee_y: "22.575891"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90843991789"
+trackee_y: "22.575891461328"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:22] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+id: 19752012
+trackee_x: "113.90843991789"
+trackee_y: "22.575891461328"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[INFO] [tracker_server.cpp:233] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:24] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:24] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90843991789"
+trackee_y: "22.575891461328"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[DEBUG] [tracker_server.cpp:58] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:24] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:101] [PID:2524] [TID:0x7fff7bcc0960] [2012-12-28 15:59:24] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:31] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90851527509"
-trackee_y: "22.57585984603"
+id: 19752012
+trackee_x: "113.90843991789"
+trackee_y: "22.575891461328"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  
-[INFO] [tracker_server.cpp:220] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:01:53] - init ok. 
-[INFO] [tracker_server.cpp:231] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.908387"
+trackee_y: "22.57595"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[DEBUG] [tracker_server.cpp:56] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+id: 19752012
+trackee_x: "113.908387"
+trackee_y: "22.57595"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[INFO] [tracker_server.cpp:231] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.908387"
+trackee_y: "22.57595"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[DEBUG] [tracker_server.cpp:56] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:39] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+id: 19752012
+trackee_x: "113.908387"
+trackee_y: "22.57595"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[INFO] [tracker_server.cpp:231] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[DEBUG] [tracker_server.cpp:56] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[INFO] [tracker_server.cpp:231] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - TRACKEE_WEB_SVR 
-[INFO] [tracker_server.cpp:21] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - parseFromWire receive: type: SEND_LOC_REQ
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
-trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
  
-[DEBUG] [tracker_server.cpp:56] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - proc SEND_LOC_REQ hasid():  
-[DEBUG] [tracker_server.cpp:99] [PID:2843] [TID:0x7fff7bcc0960] [2012-12-28 16:02:03] - event to trackee server
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:47] - event to trackee server
  type: SEND_LOC_REP
-id: 22523770
-trackee_x: "113.90849219218"
-trackee_y: "22.575915571443"
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:26:58] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.9083556332"
+trackee_y: "22.575982367117"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:04] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 09:27:30] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.90843176592"
+trackee_y: "22.575905431282"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:47] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:47] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:47] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:47] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:48] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:48] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:48] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 10:42:48] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 15:20:39] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 15:20:39] - parseFromWire receive: type: SEND_LOC_REQ
+id: 1138084
+trackee_x: "113.908847"
+trackee_y: "22.576173"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 15:20:39] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 15:20:39] - event to trackee server
+ type: SEND_LOC_REP
+id: 1138084
+trackee_x: "113.908847"
+trackee_y: "22.576173"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:01] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:07] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:07] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:07] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:07] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:08] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "114.064338"
+trackee_y: "22.632336"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\270\203\351\276\231\350\267\257"
+ 
+[INFO] [tracker_server.cpp:231] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:20] - TRACKEE_WEB_SVR 
+[INFO] [tracker_server.cpp:21] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:20] - parseFromWire receive: type: SEND_LOC_REQ
+id: 19752012
+trackee_x: "113.908468"
+trackee_y: "22.575886"
+trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
+ 
+[DEBUG] [tracker_server.cpp:56] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:20] - proc SEND_LOC_REQ hasid():  
+[DEBUG] [tracker_server.cpp:99] [PID:773] [TID:0x7fff7bcc0960] [2013-01-05 17:33:20] - event to trackee server
+ type: SEND_LOC_REP
+id: 19752012
+trackee_x: "113.908468"
+trackee_y: "22.575886"
 trackee_desc: "\345\271\277\344\270\234\347\234\201\346\267\261\345\234\263\345\270\202\345\256\235\345\256\211\345\214\272\345\211\215\350\277\233\344\270\200\350\267\257217"
  

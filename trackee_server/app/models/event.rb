@@ -6,4 +6,5 @@ class Event
   field :tracker_y, :type => String
   field :trackee_x, :type => String
   field :trackee_y, :type => String
+  field :trackee_desc, :type => String
 end

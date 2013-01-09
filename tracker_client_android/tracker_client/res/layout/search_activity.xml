@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/search_bar_edit_bg"
+            android:hint="输入目的地"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingRight="40dp"
+            android:scrollHorizontally="true"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingRight="6dp"
+            android:scaleType="matrix"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid"
+        android:orientation="vertical" >
+
+        <com.baidu.mapapi.MapView
+            android:id="@+id/searchMapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <ListView
+            android:id="@+id/listAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="#80000000"
+            android:cacheColorHint="#00000000" />
+    </FrameLayout>
+
+</LinearLayout>
