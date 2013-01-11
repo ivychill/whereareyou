@@ -21,34 +21,34 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:paddingTop="12dp" >
 
             <ImageButton
                 android:id="@+id/btn_sms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="matrix"
+                android:layout_width="54dp"
+                android:layout_height="fill_parent"
                 android:orientation="horizontal"
-                android:src="@drawable/icon_sms" />
+                android:scaleType="matrix"
+                android:src="@drawable/location" />
 
             <ImageButton
                 android:id="@+id/btn_share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="-2dp"
-                android:orientation="horizontal"
-                android:src="@drawable/icon_dest"/>
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-4dp"
+                android:scaleType="matrix"
+                android:src="@drawable/icon_dest" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/btn_about"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-2dp"
-                android:orientation="horizontal"
-                android:text="about" />
+                android:layout_marginLeft="-4dp"
+                android:scaleType="matrix"
+                android:src="@drawable/help" />
         </LinearLayout>
 
         <ImageButton
@@ -57,23 +57,43 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"
-            android:src="@drawable/icon_myloc"
-            />
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_myloc" />
 
-        <ImageButton
-            android:id="@+id/btn_sat"
+        <LinearLayout
+            android:id="@+id/bar_zoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="12dp"
             android:layout_marginBottom="12dp"
-            android:scaleType="matrix"
-            android:src="@drawable/icon_layers_sate" 
-            />
-        
+            android:layout_marginRight="12dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_zoomin"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/zoomin_btn" />
+
+            <ImageButton
+                android:id="@+id/btn_zoomout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-16dp"
+                android:scaleType="matrix"
+                android:src="@drawable/zoomout_btn" />
+
+            <ImageButton
+                android:id="@+id/btn_sat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-16dp"
+                android:scaleType="matrix"
+                android:src="@drawable/icon_layers_sate" />
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

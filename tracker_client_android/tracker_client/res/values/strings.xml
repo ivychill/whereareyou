@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?><!-- 声明版本号和编码格式 -->
 <resources>
-    <string name="app_name">你在哪儿</string>
+    <string name="app_name">短信知位</string>
     <string name="button_about">关于</string>
     <string name="button_i">我的位置</string>
-    <string name="button_loc">定位结果</string>
-    <string name="button_sms">短信定位</string>
-    <string name="button_nearby">附近</string>
-    <string name="button_share">位置共享</string>
+    <string name="button_sms">发送定位短信</string>
+    <string name="button_share">发送集合地点</string>
     <string name="button_settings">设置</string>
-    <string name="title_activity_main">你在哪儿</string>
-    <string name="my_loc">我的位置:</string>
-    <string name="friend_loc">朋友位置:</string>
-    <string name="show_map">查看地图</string>
-
+    <string name="friend_loc">我/朋友位置切换</string>
+    <string name="help">帮助</string>
+    <string name="version">版本</string>
+    <string name="ver_no">1.0</string>
+    <string name="homepage">www.roadclouding.com</string>
+    <string name="copyright">路云信息科技 版权所有</string>
 </resources>

@@ -261,22 +261,20 @@ public class SearchActivity extends MapActivity implements OnGestureListener {
 				final MKPoiInfoHelper mpi = new MKPoiInfoHelper(res);
 				// mSearchKey.setText(res.strAddr);
 				new AlertDialog.Builder(SearchActivity.this)
-						.setTitle("设置地址")
+						.setTitle("目的地址")
 						.setMessage(String.format("设置目标地址为%s吗?", res.strAddr))
-						.setPositiveButton("确定",
+						.setPositiveButton("下一步",
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface dialog,
 											int which) {
 										Bundle bundle = new Bundle();
 										// bundle.putString("key", "value");
-										// bundle.putSerializable(Constants.POI_RETURN_KEY,
-										// mpi);
+										bundle.putSerializable(
+												Constants.POI_RETURN_KEY, mpi);
+
 										Log.d(TAG, "bundle: " + bundle);
 										Intent intent = new Intent();
-										// intent.putExtra(Constants.POI_RETURN_KEY,
-										// poiInfoSerialable);
 										intent.putExtras(bundle);
-										// sendBroadcast(intent);
 										setResult(RESULT_OK, intent);
 										finish();
 									}
@@ -355,35 +353,6 @@ public class SearchActivity extends MapActivity implements OnGestureListener {
 		}
 	}
 
-	// @Override
-	// public void onScrollStateChanged(AbsListView view, int scrollState) {
-	// int itemsLastIndex = adapter.getCount()-1; //数据集最后一项的索引
-	// int lastIndex = itemsLastIndex + 1;
-	// if (scrollState == OnScrollListener.SCROLL_STATE_IDLE
-	// && visibleLastIndex == lastIndex) {
-	// // 如果是自动加载,可以在这里放置异步加载数据的代码
-	// }
-	// }
-	//
-	// @Override
-	// public void onScroll(AbsListView view, int firstVisibleItem,
-	// int visibleItemCount, int totalItemCount) {
-	// this.visibleItemCount = visibleItemCount;
-	// visibleLastIndex = firstVisibleItem + visibleItemCount - 1;
-	//
-	// Log.e("========================= ","========================");
-	// Log.e("firstVisibleItem = ",firstVisibleItem+"");
-	// Log.e("visibleItemCount = ",visibleItemCount+"");
-	// Log.e("totalItemCount = ",totalItemCount+"");
-	// Log.e("========================= ","========================");
-	//
-	// //如果所有的记录选项等于数据集的条数，则移除列表底部视图
-	// if(totalItemCount == datasize+1){
-	// mListView.removeFooterView(loadMoreView);
-	// Toast.makeText(this, "数据全部加载完!", Toast.LENGTH_LONG).show();
-	// }
-	// }
-
 	class PoiAdapter extends BaseAdapter implements
 			AdapterView.OnItemClickListener {
 		private final List<MKPoiInfo> mPoiInfos;
@@ -440,14 +409,10 @@ public class SearchActivity extends MapActivity implements OnGestureListener {
 			poiInfoSerialable.copyFrom(poiInfo);
 
 			Bundle bundle = new Bundle();
-			// bundle.putString("key", "value");
-			// bundle.putSerializable(Constants.POI_RETURN_KEY,
-			// poiInfoSerialable);
+			bundle.putSerializable(Constants.POI_RETURN_KEY, poiInfoSerialable);
 			Log.d(TAG, "bundle: " + bundle);
 			Intent intent = new Intent();
-			// intent.putExtra(Constants.POI_RETURN_KEY, poiInfoSerialable);
 			intent.putExtras(bundle);
-			// sendBroadcast(intent);
 			setResult(RESULT_OK, intent);
 			finish();
 		}

@@ -8,14 +8,14 @@
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="fill_parent"
-        android:layout_height="45dp"
-        android:background="@drawable/title_bar"
+        android:layout_height="36dp"
+        android:background="@drawable/header_bg"
         android:gravity="center_horizontal|center_vertical" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="帮助"
+            android:text="@string/help"
             android:textColor="#ffffff"
             android:textSize="20sp" />
     </LinearLayout>
@@ -42,17 +42,18 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/button_sms"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
+                    android:src="@drawable/location" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="发送定位短信"
+                    android:text="@string/button_sms"
                     android:textColor="#000"
                     android:textSize="17sp" />
             </RelativeLayout>
@@ -67,16 +68,17 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/button_share"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
+                    android:src="@drawable/icon_dest" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="发送集合地点"
+                    android:text="@string/button_share"
                     android:textColor="#000"
                     android:textSize="17sp" />
             </RelativeLayout>
@@ -92,17 +94,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="我/朋友位置切换"
+                    android:text="@string/friend_loc"
                     android:textColor="#000"
                     android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/friend_loc"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="matrix"
-                    android:src="@drawable/mm_submenu" />
+                    android:src="@drawable/icon_myloc" />
             </RelativeLayout>
 
             <!-- *********************************************************************** -->
@@ -119,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="版本"
+                    android:text="@string/version"
                     android:textColor="#000"
                     android:textSize="17sp" />
 
@@ -129,7 +132,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
-                    android:text="2.0"
+                    android:text="@string/ver_no"
                     android:textColor="#000"
                     android:textSize="17sp" />
             </RelativeLayout>
@@ -143,7 +146,7 @@
             android:layout_marginBottom="20dp"
             android:autoLink="web"
             android:gravity="center"
-            android:text="www.roadclouding.com"
+            android:text="@string/homepage"
             android:textSize="12sp" />
 
         <TextView
@@ -152,7 +155,7 @@
             android:layout_above="@id/homepage"
             android:layout_centerInParent="true"
             android:paddingBottom="8dp"
-            android:text="路云信息科技 版权所有"
+            android:text="@string/copyright"
             android:textColor="#000"
             android:textSize="14sp" />
     </RelativeLayout>

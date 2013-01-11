@@ -15,14 +15,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 // 选取联系人
 public class GetFriActivity extends Activity {
-
-	private String mSMS = "想知道你在哪，同意请点击";
 	private final static String TAG = "GetFriActivity";
-
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
@@ -34,16 +33,30 @@ public class GetFriActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
-				Toast.makeText(getApplicationContext(), "invite friend!",
-						Toast.LENGTH_SHORT).show();
-
 				Intent intent = new Intent(Intent.ACTION_PICK,
 						ContactsContract.Contacts.CONTENT_URI);
 				startActivityForResult(intent, Constants.PICK_CONTACT);
 			}
-
 		});
+
+		TextView txt_sms = (TextView) findViewById(R.id.txt_sms);
+		TextView txt_tips = (TextView) findViewById(R.id.txt_tips);
+		
+		Bundle bundle = getIntent().getExtras();
+		if (bundle != null) {
+			// 发送目的地
+			MKPoiInfoHelper mpi = (MKPoiInfoHelper) bundle
+					.getSerializable(Constants.POI_RETURN_KEY);
+
+			Log.d(TAG, mpi.getAddress());
+			txt_sms.setText(Constants.DESTSMS + mpi.getCity() + mpi.getName());
+			txt_tips.setText(Constants.DESTTIP);
+			
+		} else {
+			//发送 短信请求定位
+			txt_sms.setText(Constants.LOCSMS);
+			txt_tips.setText(Constants.LOCTIP);
+		}
 	}
 
 	protected void onActivityResult(int reqCode, int resultCode, Intent intent) {
@@ -96,8 +109,8 @@ public class GetFriActivity extends Activity {
 						setResult(RESULT_CANCELED, it);
 						finish();
 					}
-//					Toast.makeText(getApplicationContext(), name,
-//							Toast.LENGTH_SHORT).show();
+					// Toast.makeText(getApplicationContext(), name,
+					// Toast.LENGTH_SHORT).show();
 
 					Bundle bundle = new Bundle();
 					String rslt[] = { name, phoneNo };

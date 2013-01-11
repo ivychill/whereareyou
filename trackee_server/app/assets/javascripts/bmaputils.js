@@ -92,8 +92,8 @@ function bgLocationUpdate(){
 
 // 在地图上显示目的地址
 function toDest(x, y){
-    var lng = new Number(x)/10000;
-    var lat = new Number(y)/10000;
+    var lng = new Number(x)/1000000;
+    var lat = new Number(y)/1000000;
 //    alert(x + ' ' + y);
     destPoint = new BMap.Point(lng,lat);
     addMarker(destPoint);
