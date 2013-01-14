@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/header_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txt_fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="短信定位"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingRight="6dp"
+            android:scaleType="matrix"
+            android:src="@drawable/btn_fri_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/txt_sms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="3"
+            
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/title_bar" >
+            </View>
+
+            <TextView
+                android:id="@+id/txt_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

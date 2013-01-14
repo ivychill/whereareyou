@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center"
+            android:clickable="true"
+            android:visibility="visible" >
+        </com.baidu.mapapi.MapView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="12dp" >
+
+            <ImageButton
+                android:id="@+id/btn_sms"
+                android:layout_width="54dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:scaleType="matrix"
+                android:src="@drawable/location" />
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-4dp"
+                android:scaleType="matrix"
+                android:src="@drawable/icon_dest" />
+
+            <ImageButton
+                android:id="@+id/btn_about"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:scaleType="matrix"
+                android:src="@drawable/help" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:scaleType="matrix"
+            android:src="@drawable/ft_loc_normal_normal" />
+
+        <LinearLayout
+            android:id="@+id/bar_zoom"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_zoomin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/zoomin_btn" />
+
+            <ImageButton
+                android:id="@+id/btn_zoomout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-18dp"
+                android:scaleType="matrix"
+                android:src="@drawable/zoomout_btn" />
+
+            <ImageButton
+                android:id="@+id/btn_sat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-16dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="matrix"
+                android:src="@drawable/icon_layers_sate" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
